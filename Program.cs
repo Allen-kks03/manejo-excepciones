@@ -23,6 +23,10 @@ namespace manejo_excepciones
             {
                 Console.WriteLine(e.Message);
             }
+            catch(OverflowException e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }
