@@ -17,7 +17,7 @@ namespace manejo_excepciones
                 Console.Write("Dame un numero entero: ");
                 Num = int.Parse(Console.ReadLine());
                 Console.WriteLine("El cuadrado es: "+Math.Pow(Num, 2));
-                Console.ReadKey();
+                
             }
             catch (FormatException e)
             {
@@ -27,6 +27,7 @@ namespace manejo_excepciones
             {
                 Console.WriteLine(e.Message);
             }
+            Console.ReadKey();
         }
     }
 }
